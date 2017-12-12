@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Rob Cronin Home Page</title>
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <h1>Test Website</h1>
+    <h2 id="button">Menu</h3>
+    <ul id="menu">
+        <li><a href="#cointoss">Coin Toss</a></li>
+        <li>Menu Item 2</li>
+        <li>Menu Item 3</li>
+    </ul>
+
+    
+    <h4 id="cointoss">Coin Toss</h3>
+    <p id="js">JS test</p>
+    <script>
+        //import random from Math;
+        const rando = Math.random();
+        if(rando< 0.5){
+            document.getElementById("js").innerHTML = "Heads";
+        }
+        else{
+            document.getElementById("js").innerHTML = "Tails";
+        }
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./jqueryScript.js"></script>
+</body>
+
+</html>
